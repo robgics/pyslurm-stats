@@ -4675,6 +4675,9 @@ cdef class statistics:
             self._StatsDict['req_time_start'] = self._buf.req_time_start
             self._StatsDict['server_thread_count'] = self._buf.server_thread_count
             self._StatsDict['agent_queue_size'] = self._buf.agent_queue_size
+            self._StatsDict['agent_count'] = self._buf.agent_count
+            self._StatsDict['agent_thread_count'] = self._buf.agent_thread_count
+            self._StatsDict['dbd_agent_queue_size'] = self._buf.dbd_agent_queue_size
 
             self._StatsDict['schedule_cycle_max'] = self._buf.schedule_cycle_max
             self._StatsDict['schedule_cycle_last'] = self._buf.schedule_cycle_last
@@ -4705,6 +4708,8 @@ cdef class statistics:
             self._StatsDict['bf_depth_try_sum'] = self._buf.bf_depth_try_sum
             self._StatsDict['bf_queue_len'] = self._buf.bf_queue_len
             self._StatsDict['bf_queue_len_sum'] = self._buf.bf_queue_len_sum
+            self._StatsDict['bf_table_size'] = self._buf.bf_table_size
+            self._StatsDict['bf_table_size_sum'] = self._buf.bf_table_size_sum
             self._StatsDict['bf_when_last_cycle'] = self._buf.bf_when_last_cycle
             self._StatsDict['bf_active'] = self._buf.bf_active
 
